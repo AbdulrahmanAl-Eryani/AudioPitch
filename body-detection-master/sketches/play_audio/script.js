@@ -62,8 +62,8 @@ window.setInterval( function(){
 
   ///if the value is in
 
-  function loadSample("zymbel.mp3") {
-    return fetch("zymbel.mp3")
+  function loadSample(sample) {
+    return fetch(sample)
       .then(response => response.arrayBuffer())
       .then(buffer => context.decodeAudioData(buffer));
   }
